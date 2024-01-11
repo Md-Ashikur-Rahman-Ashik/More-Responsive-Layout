@@ -23,3 +23,45 @@ img{
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
 }
+
+/* Responsive with Media Query */
+@media screen and (max-width: 576px) {
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* .row > div > img{
+        width: 100%;
+    } */
+
+    /* .row > div{
+        flex: 0;
+    } */
+
+    /* .verticalCollage img{
+        height: 100%;
+    } */
+
+    /* .verticalCollage img{
+        display: block;
+    } */
+
+    .squareCollage{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Responsive for medium devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .squareCollage{
+        display: flex;
+        flex-direction: column;
+    }
+}
