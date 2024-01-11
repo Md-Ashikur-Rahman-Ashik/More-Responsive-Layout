@@ -8,18 +8,19 @@
     display: grid;
     grid-template-columns: repeat(12, 100px);
     gap: 10px;
-    border: 1px solid plum;
+    /* border: 1px solid plum; */
+    margin: 100px;
 }
 
 /* Styling boxes */
 .container > div{
     background-color: tomato;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .box1{
     grid-column: 1/ span 4;
-    grid-row: 1/ span 40;
+    grid-row: 1/ span 25;
 }
 
 .box2{
@@ -60,4 +61,45 @@
 .box9{
     grid-column: 7/ span 2;
     grid-row: 12/ span 6;
+}
+
+.box10{
+    grid-column: 9/ span 2;
+    grid-row: 12/ span 6;
+}
+
+.box11{
+    grid-column: 5/ span 6;
+    grid-row: 18/ span 4;
+}
+.box12{
+    grid-column: 5/ span 6;
+    grid-row: 22/ span 4;
+}
+
+/* Making Responsive for smaller devices */
+@media screen and (max-width: 576px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        margin: 0px;
+        /* display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%; */
+    }
+
+    /* .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; */
+        /* display: grid;
+        grid-template-columns: repeat(1, 1fr); */
+        /* grid-column: auto;
+        grid-row: auto;
+    } */
+
+    /* .selectingAll{
+        display: block;
+    } */
 }
