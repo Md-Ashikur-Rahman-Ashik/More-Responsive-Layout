@@ -1,0 +1,6 @@
+/* Shared Styling section */
+header > p, header > nav, main > article, aside, footer{
+    background-color: lightyellow;
+    border: 2px solid peru;
+    border-radius: 5px;
+}
